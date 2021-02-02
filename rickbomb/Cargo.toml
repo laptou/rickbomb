@@ -1,0 +1,20 @@
+[package]
+name = "rickbomb"
+version = "0.1.0"
+authors = ["Ibiyemi Abiodun <laptou@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser", "libloaderapi", "minwindef", "windef", "roapi", "winuser", "winerror"] }
+oneshot = "0.1"
+crossbeam = "0.8"
+winit = "0.24"
+raw-window-handle = "0.3"
+bindings = { path = "../bindings" }
+anyhow = "1.0"
+lazy_static = "1.4.0"
+bus = "2.2"
+log = "0.4"
+pretty_env_logger = "0.4"
